@@ -1,4 +1,5 @@
 @import '../abstract/mixins.scss';
+@import '../abstract/variables.scss';
 
 .team {
     &__heading {
@@ -57,7 +58,7 @@
             line-height: 18px;
             letter-spacing: 0.25999999046325684px;
             text-align: center;
-            color: #808992;
+            color: $gray-10;
             padding-bottom: 1rem;
         }
         &-description {
@@ -68,7 +69,7 @@
             line-height: 24px;
             letter-spacing: 0px;
             text-align: center;
-            color: #45515F;
+            color: $gray-11;
             width: 270px;
             margin: auto;
             @include response(phone) {
@@ -89,14 +90,14 @@
             align-items: center;
             height: 23px;
             width: 43px;
-            border: 1px solid #D9DCE0;
+            border: 1px solid $gray-12;
             border-radius: 3px;
             &:first-child {
                 margin-right: 6px;
             }
         }
         &-icon {
-            color: #001832;
+            color: $gray-13;
         }
     }
 }

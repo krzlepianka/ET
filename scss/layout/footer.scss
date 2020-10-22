@@ -1,7 +1,8 @@
 @import '../abstract/mixins.scss';
+@import '../abstract/variables.scss';
 
 .footer {
-    background-image: linear-gradient(#FAFBFF 0%, #EFF1F9 41.15%, #E9ECF6 48.96%, #CED3E8 92.71%);
+    background-image: linear-gradient(#{$gray-3} 0%, #{$gray-4} 41.15%, #{$gray-5} 48.96%, #{$gray-6} 92.71%);
     height: 22.5rem;
     @include response(phone) {
         display: flex;
@@ -10,6 +11,8 @@
         background-image: none;
     }
     &__logo {
+        height: 39px;
+        width: 96px;
         @include response(phone) {
             align-self: flex-start;
             padding-left: 16px;
@@ -23,7 +26,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+            background: linear-gradient(180deg, #{$gray-3} 0%, #{$gray-4} 41.68%, #{$gray-5} 49.59%, #{$gray-6} 93.91%);
         }
     }
     &__text {
@@ -39,7 +42,7 @@
             font-weight: 400;
             line-height: 19px;
             letter-spacing: 0.320000022649765px;
-            color: #263396;
+            color: $blue-3;
             padding-bottom: 1.6rem;
             @include response(phone) {
                 padding: 16px 0px 16px 0px
@@ -53,7 +56,7 @@
             line-height: 24px;
             letter-spacing: 0.40000003576278687px;
             text-align: center;
-            color: #0F81FF;
+            color: $blue-4;
             @include response(phone) {
                 padding: 16px 0px 16px 0px
             }
@@ -66,7 +69,7 @@
         border-radius: 23px;
         border: none;
         outline: none;
-        background-color: #38A5DB;
+        background-color: $blue-2;
         color: #FFF;
         cursor: pointer;
         font-size: 16px;
@@ -84,7 +87,7 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0px;
-        color: #45515F;
+        color: $gray-11;
         &:not(:last-child)::after {
             content: "|";
             padding-right: 2.3rem;
@@ -106,7 +109,7 @@
             &>p {
                 flex: 0 50%;
                 padding: 48px 0px 19px 0px;
-                background-color: #FFF;
+                background-color: $white;
             }
         }
     }

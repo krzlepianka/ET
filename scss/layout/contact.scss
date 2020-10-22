@@ -1,8 +1,9 @@
 @import '../abstract/mixins.scss';
+@import '../abstract/variables.scss';
 
 .contact {
     height: 69.3rem;
-    background-color: #252B42;
+    background-color: $gray;
     width: 100%;
     @include response(phone) {
         height: auto;
@@ -15,7 +16,7 @@
         line-height: 34px;
         letter-spacing: 12px;
         text-align: center;
-        color: #FFF;
+        color: $white;
         padding-top: 88px;
         padding-bottom: 26px;
     }
@@ -27,7 +28,7 @@
         line-height: 24px;
         letter-spacing: 0px;
         text-align: center;
-        color: #FFF;
+        color: $white;
         height: 48px;
         width: 340px;
         margin: auto;
@@ -44,13 +45,12 @@
 .form {
     display: flex;
     flex-direction: column;
-    background: red;
     align-items: center;
     justify-content: center;
     height: 370px;
     width: 401px;
     border-radius: 13.07420539855957px;
-    background-color: #4250BF;
+    background-color: $blue;
     @include response(phone) {
         width: 288px;
         margin-bottom: 78px;
@@ -85,7 +85,7 @@
             font-size: 17px;
             font-style: normal;
             font-weight: 400;
-            color: #FFF;
+            color: $white;
         }
     }
     &__input[type=checkbox] {
@@ -103,7 +103,7 @@
         border-radius: 23px;
         border: none;
         outline: none;
-        background-color: #38A5DB;
+        background-color: $blue-2;
         color: #FFF;
         cursor: pointer;
         font-size: 16px;

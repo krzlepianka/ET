@@ -1,4 +1,5 @@
 @import '../abstract/mixins.scss';
+@import '../abstract/variables.scss';
 
 .main {
     width: 100%;
@@ -22,9 +23,9 @@
     &__icon {
         position: absolute;
         &--facebook {
-            border: 1px solid #1877F2;
-            background-color: #1877F2;
-            color: #FFF;
+            border: 1px solid $blue-5;
+            background-color: $blue-5;
+            color: $white;
             padding: 7px 10px;
             font-size: 16px;
             border-radius: 50%;
@@ -36,8 +37,8 @@
             }
         }
         &--twitter {
-            border: 1px solid #63C7FF;
-            background-color: #63C7FF;
+            border: 1px solid $blue-6;
+            background-color: $blue-6;
             color: #FFF;
             padding: 8px 8px;
             font-size: 15px;
@@ -130,7 +131,7 @@
         font-size: 40px;
         font-family: 'Sen', sans-serif;
         font-weight: 700;
-        color: #FFF;
+        color: $white;
         font-family: 'Sen';
         line-height: 56px;
         letter-spacing: 0.20000000298023224px;
@@ -161,7 +162,7 @@
         font-size: 1.8rem;
         font-family: 'Sen', sans-serif;
         font-weight: 400;
-        color: #C6CAEC;
+        color: $gray-8;
         @include response(phone) {
             top: 49%;
             left: 50%;
@@ -175,7 +176,7 @@
         position: absolute;
         top: 65%;
         left: 8%;
-        background-color: #FFF;
+        background-color: $white;
         width: 48rem;
         height: 4.6rem;
         border-radius: 25px;
@@ -200,7 +201,7 @@
         top: 65%;
         left: 34%;
         color: #FFF;
-        background: #38A5DB;
+        background: $blue-2;
         border-radius: 25px;
         border: none;
         width: 15.4rem;

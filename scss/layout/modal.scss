@@ -1,4 +1,5 @@
-@import '../abstract//mixins.scss';
+@import '../abstract/mixins.scss';
+@import '../abstract/variables.scss';
 
 .modal {
     display: none; 
@@ -9,7 +10,7 @@
     width: 100%;
     height: 100%;
     overflow: auto; 
-    background: rgba(37, 43, 66, 0.5);
+    background: $gray-14;
     z-index: 100;
     &__content {
         position: absolute;
@@ -19,8 +20,8 @@
         height: 744px;
         width: 630px;
         border-radius: 20px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.25);
+        background: $white;
+        box-shadow: 0px 4px 44px $gray-15;
         @include response(phone) {
             width: 88%;
         }
@@ -41,7 +42,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 34px;
-        color: #38A5DB;
+        color: $blue-2;
         padding-bottom: 24px;
         @include response(phone) {
             font-size: 24px;
@@ -52,7 +53,7 @@
         font-size: 13px;
         line-height: 18px;
         letter-spacing: 0.25999999046325684px; 
-        color: #808992;
+        color: $gray-10;
         padding-bottom: 32px;
     }
     &__scroller {
@@ -63,14 +64,14 @@
         z-index: 100;
         @include response(phone) {
             width: auto;
-            height: auto;
+            height: 514px;
             padding: 0 15px;
         }
         &-text {
             font-family: 'Sen';
             font-size: 18px;
             line-height: 24px;
-            color: #45515F;
+            color: $gray-11;
             @include response(phone) {
                 font-size: 13px;
             }
