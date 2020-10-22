@@ -1,0 +1,113 @@
+@import '../abstract/mixins.scss';
+
+.footer {
+    background-image: linear-gradient(#FAFBFF 0%, #EFF1F9 41.15%, #E9ECF6 48.96%, #CED3E8 92.71%);
+    height: 22.5rem;
+    @include response(phone) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-image: none;
+    }
+    &__logo {
+        @include response(phone) {
+            align-self: flex-start;
+            padding-left: 16px;
+        }
+    }
+    &__first-section {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 4.8rem;
+        @include response(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(180deg, #FAFBFF 0%, #EFF1F9 41.68%, #E9ECF6 49.59%, #CED3E8 93.91%);
+        }
+    }
+    &__text {
+        text-align: center;
+        padding-left: 8%;
+        @include response(phone) {
+            padding-left: 0;
+        }
+        &--first {
+            font-family: Sen;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.320000022649765px;
+            color: #263396;
+            padding-bottom: 1.6rem;
+            @include response(phone) {
+                padding: 16px 0px 16px 0px
+            }
+        }
+        &--second {
+            font-family: Sen;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.40000003576278687px;
+            text-align: center;
+            color: #0F81FF;
+            @include response(phone) {
+                padding: 16px 0px 16px 0px
+            }
+        }
+    }
+    &__button {
+        height: 45.999874114990234px;
+        width: 22rem;
+        align-self: baseline;
+        border-radius: 23px;
+        border: none;
+        outline: none;
+        background-color: #38A5DB;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 16px;
+        @include response(phone) {
+            align-self: center;
+            margin-top: 80px;
+            margin-bottom: 33px;
+            width: 220px;
+        }
+    }
+    &__text-2 {
+        font-family: 'Sen';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #45515F;
+        &:not(:last-child)::after {
+            content: "|";
+            padding-right: 2.3rem;
+            padding-left: 2.3rem;
+        }
+        @include response(phone) {
+            &:not(:last-child)::after {
+                content: "none";
+            }
+        }
+    }
+    &__second-section {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 3.1rem;
+            @include response(phone) {
+            &>p {
+                flex: 0 50%;
+                padding: 48px 0px 19px 0px;
+                background-color: #FFF;
+            }
+        }
+    }
+}

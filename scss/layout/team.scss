@@ -1,0 +1,102 @@
+@import '../abstract/mixins.scss';
+
+.team {
+    &__heading {
+        font-family: 'Sen';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4rem;
+        letter-spacing: 1.2rem;
+        text-align: center;
+        padding: 45px 0px 40px 0px;
+        @include response(tablet) {
+            margin-bottom: 48px;
+            margin-top: 400px;
+        }
+        @include response(phone) {
+            margin-bottom: 48px;
+            margin-top: 256px;
+        }
+    }
+    &__workers {
+        display: flex;
+        justify-content: space-around;
+        @include response(phone) {
+            justify-content: unset;
+        }
+    }
+    &__worker {
+        text-align: center;
+        flex-shrink: inherit;
+        @include response(phone) {
+            width: 189px !important;
+            flex-shrink: 0;
+        }
+        &-image {
+            width: 131px;
+            height: 131px;
+            border-radius: 50%;
+        }
+        &-name {
+            font-family: 'Sen';
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 3.4rem;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #38A5DB;
+            padding-bottom: 1rem;
+        }
+        &-title {
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.25999999046325684px;
+            text-align: center;
+            color: #808992;
+            padding-bottom: 1rem;
+        }
+        &-description {
+            font-family: Sen;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #45515F;
+            width: 270px;
+            margin: auto;
+            @include response(phone) {
+                width: auto;
+                padding: 0 3px;
+                font-size: 12px;
+            }
+        }
+        &-icons {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 88px;
+            padding-top: 32px;
+        }
+        &-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 23px;
+            width: 43px;
+            border: 1px solid #D9DCE0;
+            border-radius: 3px;
+            &:first-child {
+                margin-right: 6px;
+            }
+        }
+        &-icon {
+            color: #001832;
+        }
+    }
+}

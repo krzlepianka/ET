@@ -1,0 +1,56 @@
+@import '../abstract/mixins.scss';
+
+.navigation {
+    width: 100%;
+    height: 70px;
+    background-color:#FFF;
+    font-family: 'Sen', sans-serif;
+    color: #1C2085;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    @include response(phone) {
+        justify-content: space-around;        
+    }
+    @include response(tablet) {
+        justify-content: space-between;        
+    }
+    &__logo {
+        color: #263396;
+        padding-left: 13.7rem;
+        @include response(phone) {
+            height: 22px;
+            width: 56px; 
+            padding-left: 1.5rem;       
+        }
+        @include response(tablet) {
+            padding-left: 1.6rem;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        width: 21.7rem;
+        font-size: 16px;
+        padding-right: 13.7rem;
+        @include response(phone) {
+            padding-right: 0;
+        }
+        @include response(tablet) {
+            padding-right: 0;
+        }
+    }
+    &__link {
+        cursor: pointer;
+        padding-bottom: 2px;
+        @include response(phone) {
+            padding: 0 2.4rem;
+        }
+        &:hover {
+            box-shadow: 0px -2px 0px #5454D4 inset;
+        }
+    }
+}

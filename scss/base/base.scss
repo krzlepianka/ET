@@ -1,0 +1,21 @@
+@import '../abstract/mixins.scss';
+
+*,
+*::after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @include response(desktop) {
+        font-size: 62.5%;
+    }
+    @include response(tablet) {
+        font-size: 62.5%;
+    }
+    @include response(phone) {
+        font-size: 25%;
+    }
+}
+

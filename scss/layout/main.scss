@@ -1,0 +1,227 @@
+@import '../abstract/mixins.scss';
+
+.main {
+    width: 100%;
+    position: relative;
+    @include response(phone) {
+        height: 522px;
+    }
+    @include response(tablet) {
+        height: 908px;
+    }
+    &__arrow-img {
+        position: absolute;
+        top: 83%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include response(phone) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__icon {
+        position: absolute;
+        &--facebook {
+            border: 1px solid #1877F2;
+            background-color: #1877F2;
+            color: #FFF;
+            padding: 7px 10px;
+            font-size: 16px;
+            border-radius: 50%;
+            top: 688px;
+            left: 94%;
+            @include response(phone) {
+                top: 430px;
+                left: 90%;
+            }
+        }
+        &--twitter {
+            border: 1px solid #63C7FF;
+            background-color: #63C7FF;
+            color: #FFF;
+            padding: 8px 8px;
+            font-size: 15px;
+            border-radius: 50%;
+            top: 640px;
+            left: 94%;
+            @include response(phone) {
+                top: 380px;
+                left: 90%;
+            }
+        }
+    }
+    &__background {
+        width: 100%;
+        @include response(phone) {
+            height: 100%;
+            object-fit: cover;
+        }
+        @include response(tablet) {
+            height: 100%;
+            object-fit: cover;
+        }
+        &--second {
+            position: absolute;
+            top: 0%;
+            left: -4%; 
+            @include response(phone) {
+                height: 352px;
+                object-fit: cover;
+                width: 100%;
+                left: 0%;
+                }
+            @include response(tablet) {
+                height: 799px;
+                object-fit: cover;
+                width: 100%;
+                left: 0%;
+                }        
+            }
+        &--third {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            @include response(phone) {
+                height: 381px;
+                top: 27%;
+                left: -29%;
+                width: 100%;
+            }
+            @include response(tablet) {
+                height: 700px;
+                top: 27%;
+                left: -29%;
+                width: 100%;
+            }
+        }
+        &--video {
+            width: 638px;
+            height: 425px;
+            position: absolute;
+            top: 18%;
+            right: 6%;
+            cursor: pointer;
+            @include response(phone) {
+                width: 332px;
+                height: auto;
+                position: absolute;
+                top: 125%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                cursor: pointer;
+            }
+            @include response(tablet) {
+                width: 332px;
+                height: auto;
+                position: absolute;
+                top: 125%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+            }
+        }
+    }
+    &__heading {
+        position: absolute;
+        top: 30%;
+        width: 490px;
+        left: 8%;
+        font-size: 40px;
+        font-family: 'Sen', sans-serif;
+        font-weight: 700;
+        color: #FFF;
+        font-family: 'Sen';
+        line-height: 56px;
+        letter-spacing: 0.20000000298023224px;
+        @include response(phone) {
+            top: 58%;
+            left: 50%;
+            transform: translate(-50%, -152%);
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.20000000298023224px;
+            width: 287px;
+        }
+        @include response(tablet) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -121%);
+            font-size: 40px;
+            line-height: 52px;
+            letter-spacing: 0.20000000298023224px;
+            width: 569px;
+        }
+    }
+    &__text {
+        position: absolute;
+        top: 60%;
+        width: 46rem;
+        left: 8%;
+        font-size: 1.8rem;
+        font-family: 'Sen', sans-serif;
+        font-weight: 400;
+        color: #C6CAEC;
+        @include response(phone) {
+            top: 49%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    &__input {
+        position: absolute;
+        top: 65%;
+        left: 8%;
+        background-color: #FFF;
+        width: 48rem;
+        height: 4.6rem;
+        border-radius: 25px;
+        border: none;
+        font-size: 1.7rem;
+        font-family: 'Sen', sans-serif;
+        outline: none;
+        @include response(phone) {
+            height: 46px;
+            width: 287px;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 17px;
+        }
+    }
+    &__input[type=text]{
+        padding:0 2rem;
+    }
+    &__button {
+        position: absolute;
+        top: 65%;
+        left: 34%;
+        color: #FFF;
+        background: #38A5DB;
+        border-radius: 25px;
+        border: none;
+        width: 15.4rem;
+        height: 4.6rem;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        @include response(phone) {
+            height: 46px;
+            width: 300px;
+            top: 68%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 17px;
+        }
+        @include response(tablet) {
+            left: 500px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+@import './base/base';
+@import './abstract/mixins';
+
+
+@import './layout/navigation';
+@import './layout/main';
+@import './layout/modal';
+@import './layout/team';
+@import './layout/contact';
+@import './layout/footer';
